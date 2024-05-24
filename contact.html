@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UpScale - Контакти</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="main-text">
+        <h1>UpScale</h1>
+      </div>
+      <nav class="nav-bar">
+        <button class="nav-toggle" id="nav-toggle">☰ Меню</button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="main.html">Головна</a></li>
+          <li><a href="servise.html">Послуги</a></li>
+          <li><a href="fastdelivery.html">Експрес-доставка</a></li>
+          <li><a href="internationl.html">Міжнародні перевезення</a></li>
+          <li><a href="tips.html">Поради</a></li>
+          <li><a href="contact.html">Контакти</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="contact">
+      <h1>Контакти</h1>
+        <div class="container">
+      <p>
+        Щоб отримати додаткову інформацію або зв'язатися з нами, будь ласка, скористайтеся наступною контактною інформацією:
+      </p>
+      <p><strong>Адреса:</strong> вул. Сабаровська, 52, м. Вінниця, Україна</p>
+      <p><strong>Телефон:</strong> +380977214889</p>
+      <p><strong>Email:</strong> info@delivery-site.com</p>
+        </div>
+    </section>
+    <div class="bob">
+      <h2>Форма зворотнього зв’язку:</h2>
+        <form class="form" action="submit_form.php" method="post">
+          <strong for="name">Ім’я:</strong>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="input-field"
+            required
+          /><br /><br />
+          <strong for="Phone">Телефон:</strong>
+          <input
+          type="text"
+            id="Phone"
+            name="Phone"
+            class="input-field"
+            required
+            /><br /><br />
+          <strong for="email">Email:</strong>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="input-field"
+            required
+          /><br /><br />
+          <strong for="message">Повідомлення:</strong><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            class="text-area"
+            required
+          ></textarea
+          ><br /><br />
+          <input type="submit" value="Відправити" class="submit-btn" />
+        </form>
+    </div>
+  </body>
+  <script src='ekun.js'></script>
+  <script defer src="menubar.js"></script>
+</html>

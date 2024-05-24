@@ -1,0 +1,246 @@
+/* Загальні стилі */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(photo/regist.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+.main-text h1 {
+  margin: 0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Навігаційне меню */
+.nav-bar {
+  position: relative;
+}
+
+.nav-bar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  overflow: hidden;
+  border-radius: 8px;
+  display: flex;
+}
+
+.nav-bar li {
+  flex: 1;
+}
+
+.nav-bar li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.nav-bar li a:hover {
+  background-color: #555;
+}
+
+.nav-toggle {
+  display: none;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .container {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-bar li {
+    flex: none;
+  }
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-menu.expanded {
+    max-height: 500px; 
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .nav-bar li {
+    flex: none;
+  }
+
+  .nav-bar li a {
+    padding: 10px 15px;
+  }
+  .photo-video {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-menu.expanded {
+    max-height: 500px; 
+  }
+
+  .nav-bar ul {
+    flex-direction: column;
+  }
+
+  .nav-bar li {
+    flex: none;
+  }
+
+  .nav-bar li a {
+    padding: 10px 15px;
+  }
+  .photo-video {
+    text-align: center;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  transition: max-height 0.3s ease-out;
+  overflow: hidden;
+}
+
+.nav-menu.collapsed {
+  max-height: 0;
+  flex-direction: column;
+}
+
+.nav-menu.expanded {
+  max-height: 500px; 
+  flex-direction: column;
+}
+
+/* Заголовок секції */
+h2 {
+  color: #333;
+}
+
+/* Форма зворотнього зв'язку */
+.form {
+  max-width: 450px;
+  margin: 10px auto;
+  background-color: #333;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-field, .text-area, .submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.text-area {
+  resize: none;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+/* Секція "Поради та інформація" */
+#tips {
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Таблиця */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+.bob h2 {
+  text-align: center;
+  color: #000000;
+}
+
+h1 {
+  text-align: center;
+}
+
+.photo-video {
+  margin: 20px 0;
+}
+
+.photo-video img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.photo-video .video {
+  max-width: 100%;
+}
